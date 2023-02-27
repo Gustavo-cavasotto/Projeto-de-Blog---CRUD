@@ -1,0 +1,3 @@
+1 - Depois de tudo criado no models
+2 - usamos makemigrations e migrate no console
+3 - depois precisamos habilitar no painel admin em admin.py, usando from .models import Post (ou nome da classe)

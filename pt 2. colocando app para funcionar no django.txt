@@ -1,0 +1,4 @@
+1° passo = Você precisa registrar o app em settings.py
+2° passo = Feito isso, você só digita o nome da pasta do APP em INSTALLED_APPS
+3° passo = Como criar o superuser? python manage.py createsuperuser
+4° passo = Para acessar é so colocar /admin no endereço do server

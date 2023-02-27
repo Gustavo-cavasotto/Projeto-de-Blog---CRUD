@@ -1,0 +1,4 @@
+passo 1 - Criamos um arquivo html para a nova funcionalidade "criação.html"
+passo 2 - no arquivo html home linkamos
+passo 3 - Temos que adicionar o determinado módulo na views.py (UpdateView, CreateView, DetailView)
+passo 4 -  Acicionamos no urls.py

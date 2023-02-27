@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Blog {% endblock title %}
+{% block header %}
+
+<header class="masthead" style="background-image: url({% static 'assets/img/wp2924240-surfing-desktop-4k-wallpapers.jpg' %})">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>Rede Social</h1>
+                    <span class="subheading">Blog Desenvolvido com Django</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock header %}
+{% block content %} 
+    {% for post in object_list %}
+    <div class="post-preview">
+        <a href="{{post.get_absolute_url}}">
+            <h2 class="post-title">{{ post.titulo }}</h2>
+            <h3 class="post-subtitle">{{ post.conteudo|safe|truncatechars:"200" }}</h3>
+        </a>
+        <p class="post-meta">
+            Postado por
+            <a href="#">{{post.autor}}</a>
+            em {{post.publicado}}
+        </p>
+    </div>
+
+    <hr class="my-4" />
+ 
+    {% endfor %}
+    <div class="d-flex justify-content-end mb-4">
+        <a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a>
+    </div>
+{% endblock content %}
+
+
+<!--
+
+     <div class="post-entry">
+            <h2><a href="{{post.get_absolute_url}}">{{ post.titulo }}</a></h2>
+            <p>{{ post.conteudo }}</p>
+        </div>
+
+    <div class="post-preview">
+                        <a href="post.html">
+                            <h2 class="post-title">Failure is not an option</h2>
+                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our
+                                duty to future generations.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on July 8, 2022
+                        </p>
+                    </div>
+                
+                    <hr class="my-4" />
+                 
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"
+                            href="#!">Older Posts →</a>
+                        </div>
+                </div>
+                

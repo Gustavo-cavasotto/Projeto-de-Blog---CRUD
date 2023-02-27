@@ -1,0 +1,8 @@
+1° passo    - python -m venv env  (criar venv)
+2° passo    -.\env\Scripts\Activate.ps1  (ativar venv)    ou      c:/Users/Gustavo/Desktop/curso_django/env/Scripts/Activate.ps1 
+3° passo    pip install django  (instalar django) 
+4° passo iniciar projeto ==>    django-admin startproject meu_site .     
+5° passo iniciar app ==> python manage.py startapp 'nome que vc quer'     
+6° passo inicar banco de dados ==>    python manage.py migrate      
+7 ° passo inicar server ==> python manage.py runserver (127.0.0.1:8000)  (pode colocar outro endereço caso de pra outro site)          
+                                                                 

@@ -1,0 +1,15 @@
+1 passo - Vamos em settings e: 
+
+    STATIC_URL = '/static/'
+    MEDIA_URL = '/media/' #quando o usuário fizer upload de uma imagem, onde vai ficar
+    MEDIA_ROOT = 'media'
+
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #onde vai ficar os arquivos estáticos
+
+    STATICFILES_DIRS = [
+        'statics'
+]
+
+2 passo - Vamos em settings, e na linha dos templates, e na linha DIRS, colocamos o nome da pasta
+    'DIRS': ['templates'],
+

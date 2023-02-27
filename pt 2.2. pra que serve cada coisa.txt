@@ -1,0 +1,4 @@
+1 -  migrations serve para vc salvar as novas alterações do banco de dados
+2 - admin.py serve para vc alterar dados do painel admin do django
+3 -  models.py usamos para criar tabelas e dados para o banco de dados e dizer quais são os tipos (varchar, char, etc)
+4 - views.py usamos para definir templates, listagem de dados, cbv, fdb

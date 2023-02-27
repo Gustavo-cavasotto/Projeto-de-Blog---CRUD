@@ -1,0 +1,4 @@
+1 passo - post = Post"nome da classe"(titulo = 'Testando Shell', slug='testando-django', conteudo='testan
+do shell do djangooo', autor=user)
+
+2 passo - use post.save()
